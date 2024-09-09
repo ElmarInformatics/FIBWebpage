@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FIB FiveM ModernV Website">
+    <meta name="keywords" content="FIB ModernV, ModernV, Fivem">
+    <meta name="author" content="Johann IT"  >
+    <title>FIB ModernV Informanten</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" sizes="16x16" href="favicon2-32x32.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+</head>
+
+<style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+
+  
+ 
+
+  
+	
+		
+}
+
+
+
+.colorback{
+    background: rgb(0, 0, 0);
+    background-size: 300% 300%;
+    width: 100%;
+}
+
+
+.fot{
+    text-align: center;
+    height: 1.1rem;
+    width: 2.0rem;
+
+   
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(177, 177, 43);
+    text-align: center;
+
+    padding: 20px 35px;
+ 
+}
+
+.logo {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    
+    
+ 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: normal;
+  
+  
+  
+  
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+
+ 
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+
+
+
+ 
+
+.text-box{
+  color: #fff;
+  display: flex;
+ 
+
+  
+
+}
+
+.text-box p{
+  background-color: #272626;
+  font-size: 22px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+
+  text-transform: uppercase;
+    animation: animatf 1s ease-in-out infinite alternate;
+ 
+
+}
+
+
+@keyframes animatf{
+  from{
+    text-shadow: 0 0 30px white;
+  }
+  to{
+    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 10px white; 
+    text-shadow: 0 0 10px white; 
+    text-shadow: 0 0 10px white; 
+    text-shadow: 0 0 10px white; 
+
+  }
+}
+  
+
+  
+
+
+.text-box h2{
+  font-size: 4px  ;
+  color: black;
+  opacity: 0.01;
+}
+
+
+
+
+.carrer {
+    font-style: normal;
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 2.8em;
+    font-weight: 100;
+    color: rgb(177, 177, 43);
+}
+
+.texto{
+    text-align: center;
+    justify-content: center;
+    padding: 13px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(177, 177, 43);
+    text-transform: uppercase;
+}
+
+
+.detectiv{
+  padding: 5px;
+
+  width: 270px;
+  height: 270px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7rem;
+  border: solid 3px rgb(177, 177, 43);
+ 
+}
+
+
+
+
+	
+	.ula{
+color: rgb(177, 177, 43);
+font-size: 1.2rem;
+font-weight: 700;
+list-style-position: inside;
+padding: 10px;
+margin: 20px;
+letter-spacing: 1px;
+initial-letter-align: block;
+justify-content: center;
+text-align: center;
+
+
+}
+  
+  
+
+
+
+.butta {
+    background-color: #f5f9f3;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bolder;
+    box-shadow: 0 0 5px #f5f9f3,
+    
+0 0 25px #f5f9f3;
+}
+
+.butta:hover {
+    box-shadow: 0 0 5px #f5f9f3,
+0 0 25px #f5f9f3, 0 0 50px #f5f9f3,
+0 0 100px #f5f9f3, 0 0 200px #f5f9f3;
+}
+
+
+@media screen and (min-width: 768px)  {
+  .backima2 {
+    max-width: 640px;
+  }
+}
+
+
+	
+a{
+	text-decoration: underline;
+	color: white;
+}
+
+
+
+
+
+
+
+
+    /* width */
+	::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f9f3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(  #8a8a8a , #1d1c1c);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e7d493;
+  cursor: pointer;
+
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    color: rgb(177, 177, 43);
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    width: 22%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(177, 177, 43);
+}
+
+.footer-column p, .footer-column ul, .footer-bottom p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: rgb(177, 177, 43);
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #FFF;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(177, 177, 43);
+    text-decoration: none;
+    background-color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #e08900;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+  
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+}
+
+
+</style>
+
+
+<body>
+
+
+
+  <nav class="navbar">
+    <div class="logo"> <img class="fot" src="favicon2-32x32.png"> &nbsp; FIB-Informanten</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Startseite &nbsp; <i class="fa-sharp fa-solid fa-house-user"></i></a></li>
+        <li><a href="karriere.html">Karriere &nbsp; <i class="fas fa-suitcase"  ></i></a></li>
+        <li><a href="aufbau.html">Aufbau &nbsp; <i class="fa-solid fa-sitemap"></i></a></li>
+      
+        <li><a href="personalfib.html">Personal &nbsp; <i class="fas fa-person" ></i></a></li>
+        <li><a href="informantenfib.html">Informanten &nbsp; <i class="fa-solid fa-user-secret"></i></a></li>
+        <li><a href="https://discord.com/invite/WsGb3gDd95">Discord &nbsp; <i class="fab fa-discord" ></i></a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+
+
+
+
+
+    
+
+<div class="colorback">
+
+    <br>
+    <br>
+    <br>
+    <h1 class="carrer">Informanten   <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <defs>
+          <clipPath id="lineMdWatchLoop0">
+            <rect width="24" height="12" />
+          </clipPath>
+          <symbol id="lineMdWatchLoop1">
+            <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z" clip-path="url(#lineMdWatchLoop0)">
+              <animate attributeName="d" dur="12s" keyTimes="0;0.07;0.93;1" repeatCount="indefinite" values="M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z" />
+            </path>
+          </symbol>
+          <mask id="lineMdWatchLoop2">
+            <use href="#lineMdWatchLoop1" />
+            <use href="#lineMdWatchLoop1" transform="rotate(180 12 12)" />
+            <circle cx="12" cy="12" r="0" fill="#fff">
+              <animate attributeName="r" dur="12s" keyTimes="0;0.03;0.97;1" repeatCount="indefinite" values="0;3;3;0" />
+            </circle>
+          </mask>
+        </defs>
+        <rect width="24" height="24" fill="currentColor" mask="url(#lineMdWatchLoop2)" />
+      </svg>
+  </h1>
+  
+  
+  <video autoplay loop>
+    <source src="Detective Office.mp4" type="video/mp4" >
+    </video> 
+  
+  
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="texto">Sie wollen ein Informant für das Federal Investigation Bureau werden? Dann melden Sie sich hier <i class="fas fa-arrow-right"></i> <a href="//discord.com/channels/948191283862704158/1089511708508307487/1103365683535949935" >Anliegen | Extern</a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <section align="center">
+        <img class="detectiv"      src="https://cdn.discordapp.com/attachments/1280880117215924408/1282163815869321391/pngwing.com.png?ex=66de5b9b&is=66dd0a1b&hm=a61d3e5d7dc531207bbe3d1d497711141e7d06632f3799d3182d9cbbf374f329&"></img>
+        </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="texto">Das Federal Investigation Bureau benötigt:</p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+  
+  
+     
+
+      
+        <section class="listr">
+          <ul class="ula">
+        
+  
+            <li>Mitgliederlisten und Hierarchien</li>
+            <li>interne Kommunikationsdaten</li>
+            <li>geplante Verbrechen</li>
+            <li>Personenbezogene Daten</li>
+            <li>Beweismaterialien und Korruptionsnachweise</li>
+            </ul>
+  
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="texto" >Für die erhaltenen Informationen (Mitgliederlisten und Hierarchien, interne Kommunikationsdaten, geplante Verbrechen, Personenbezogene Daten, Beweismaterialien und Korruptionsnachweise) erhalten Sie eine Belohnung.</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+ 
+
+
+</div>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-column">
+          <h3>Über uns</h3>
+          <p>Das Federal Investigation Bureau (kurz: FIB) ist die zentrale Sicherheitsbehörde der Vereinigten Staaten. Das FIB ist daher für die Verfolgung und Verhinderung von bundesrechtlichen Straftaten zuständig. Die Behörde fungiert außerdem als Strafverfolgungsbehörde und Inlandsgeheimdienst.</p>
+      </div>
+      <div class="footer-column">
+          <h3>Anschrift & Kontakt</h3>
+          <ul>
+              <li>Addresse: PLZ 9393, Los Santos, USA</li>
+              <li>Addresse: PLZ 9393, Los Santos, USA</li>
+              <li>Oder Dispatch absenden</li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="karriere.html">Karriere</a></li>
+              <li><a href="aufbau.html">Aufbau</a></li>
+              <li><a href="personalfib.html">Personal</a></li>
+              <li><a href="informantenfib.html">Informant werden</a></li>
+          </ul>
+      </div>
+      <div class="footer-column social-media">
+          <h3>Folge uns</h3>
+          <a href="https://www.instagram.com/government.of.san.andreas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">Instagram <i class="fa-brands fa-instagram"></i> </a>
+          <a href="#" class="social-icon">Twitter</a>
+        
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Johann IT. Alle Rechte vorbehalten.</p>
+      <br>
+      <p class="wich">Diese Webseite bezieht sich auf den ModernV FiveM Server</p>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+</main>
+</div>
+
+
+
+
+<script src="scirpt.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FIB FiveM ModernV Website">
+    <meta name="keywords" content="FIB ModernV, ModernV, Fivem">
+    <meta name="author" content="Johann IT"  >
+    <title>FIB ModernV Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" sizes="16x16" href="favicon2-32x32.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+</head>
+
+<style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+
+
+  
+ 
+
+  
+	
+		
+}
+
+
+
+
+ 
+
+
+
+
+
+.colorback{
+    background: linear-gradient(45deg,#010101,#010101);
+    background-size: 300% 300%;
+    width: 100%;
+    padding: 20px;
+
+ 
+}
+
+
+
+
+.fot{
+    text-align: center;
+    height: 1.1rem;
+    width: 2.0rem;
+    
+
+   
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(177, 177, 43);
+    text-align: center;
+
+
+    padding: 20px 35px;
+ 
+}
+
+.logo {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    
+    
+ 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+  font-style: normal;
+ 
+  
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+
+ 
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+
+
+.carrerr {
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 2.8rem;
+
+}
+
+
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: italic;
+  color: rgb(177, 177, 43);
+
+   
+ 
+ 
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.team-member {
+    background: rgb(177, 177, 43);
+    padding: 20px;
+    border-radius: 4rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  font-style: normal;
+  color: #000000;
+
+}
+
+
+
+
+
+/* Responsive styling */
+@media(max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+    /* width */
+	::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f9f3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(  #8a8a8a , #1d1c1c);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e7d493;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-continer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 1.7rem;
+}
+
+.team-mamber {
+    background: rgb(177, 177, 43);
+    padding: 20px;
+    border-radius: 7.7rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-mamber img {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    margin-bottom: 2.7rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  font-style: normal;
+  color: #000000;
+
+}
+
+
+
+
+
+/* Responsive styling */
+@media(max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .team-mamber img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    color: rgb(177, 177, 43);
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    width: 22%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(177, 177, 43);
+}
+
+.footer-column p, .footer-column ul, .footer-bottom p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: rgb(177, 177, 43);
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #FFF;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(177, 177, 43);
+    text-decoration: none;
+    background-color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #e08900;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+  
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+}
+
+.teaxt {
+     
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+
+
+ 
+}
+
+
+
+</style>
+
+
+<body>
+
+
+
+  <nav class="navbar">
+    <div class="logo"> <img class="fot" src="favicon2-32x32.png"> &nbsp; FIB-Personal</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Startseite &nbsp; <i class="fa-sharp fa-solid fa-house-user"></i></a></li>
+        <li><a href="karriere.html">Karriere &nbsp; <i class="fas fa-suitcase"  ></i></a></li>
+        <li><a href="aufbau.html">Aufbau &nbsp; <i class="fa-solid fa-sitemap"></i></a></li>
+      
+        <li><a href="personalfib.html">Personal &nbsp; <i class="fas fa-person"  ></i></a></li>
+        <li><a href="informantenfib.html">Informanten &nbsp; <i class="fa-solid fa-user-secret"></i></a></li>
+        <li><a href="https://discord.com/invite/WsGb3gDd95">Discord &nbsp; <i class="fab fa-discord" ></i></a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+
+
+
+
+
+    
+
+<div class="colorback">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+ 
+
+    <h1 class="carrerr">Personal     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <mask id="lineMdPersonSearch0">
+            <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <g fill="none" stroke="#fff">
+                    <path stroke-dasharray="20" stroke-dashoffset="20" d="M10 5C11.66 5 13 6.34 13 8C13 9.65685 11.6569 11 10 11C8.3431 11 7 9.65685 7 8C7 6.34315 8.3431 5 10 5z">
+                        <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.8s" values="20;0" />
+                    </path>
+                    <path stroke-dasharray="36" stroke-dashoffset="36" d="M10 15C14 15 17 17 17 18V19H3V18C3 17 6 15 10 15z" opacity="0">
+                        <set attributeName="opacity" begin="1s" to="1" />
+                        <animate fill="freeze" attributeName="stroke-dashoffset" begin="1s" dur="0.8s" values="36;0" />
+                    </path>
+                </g>
+                <circle cx="16" cy="16" r="6" fill-opacity="0">
+                    <animate fill="freeze" attributeName="fill-opacity" begin="1.8s" dur="0.3s" values="0;1" />
+                </circle>
+                <path fill="none" stroke="#fff" stroke-dasharray="26" stroke-dashoffset="26" d="M16 19C14.34 19 13 17.66 13 16C13 14.34 14.34 13 16 13C 17.66 13 19 14.34 19 16C19 17.66 17.66 19 16 19v4" transform="rotate(-45 16 16)">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="1.8s" dur="0.8s" values="26;0" />
+                </path>
+            </g>
+        </mask>
+        <rect width="24" height="24" fill="currentColor" mask="url(#lineMdPersonSearch0)" />
+    </svg>
+</h1>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header>
+        <h1>Board of Directors</h1>
+    </header>
+
+    <br>
+    <main>
+    <section class="team-continer">
+     
+    <article class="team-mamber">
+        <a target="_blank" href="https://cdn.discordapp.com/attachments/1280880117215924408/1282449608080887889/brownburo.png?ex=66df65c5&is=66de1445&hm=da22f4c16a0b99b6605f1a96ef7213ad27ce847972c841ddf90d7c8329b2d769&"> 
+            <img src="https://cdn.discordapp.com/attachments/1280880117215924408/1282449608080887889/brownburo.png?ex=66df65c5&is=66de1445&hm=da22f4c16a0b99b6605f1a96ef7213ad27ce847972c841ddf90d7c8329b2d769&" alt="K. C. Brown">
+        </a>
+        <h2>C. K. Brown</h2>
+        <br>
+        <p><b>Director</b></p>
+        <br>
+        <br>
+        <br>
+           
+        <p class="teaxt">
+                 
+            Konstantin Cornelus Brown wurde am 9. Februar 1970 in Washington D.C. geboren. Bis 1999 war er als stellvertretender Behördenleiter des FIB tätig.
+
+            <br>
+            <br>
+            <br>
+
+            Von 2000 bis 2006 arbeitete Brown als Vertreter des Ministers Willi McKilli und fungierte zwischendurch als Sicherheitsberater des Innenministeriums.
+
+            <br>
+            <br>
+            <br>
+        
+            
+            Im Jahr 2007 wurde Brown selbst politisch aktiv und diente bis 2009 als Geheimdienstbeauftragter der Regierung. Nachdem Präsident Bush durch Präsident Obama abgelöst wurde, zog sich Brown aus der Politik zurück und übernahm die Position des Chief of Police des NYPD. Seine Ernennung wurde damals von vielen Pressevertretern kritisiert, da politische Einflussnahme aus Washington vermutet wurde.
+
+            <br>
+            <br>
+            <br>
+            
+            Im Jahr 2016 trat Brown aufgrund eines Wechsels im Rathaus von seiner Position zurück und wechselte in die private Sicherheitsindustrie.
+
+            <br>
+            <br>
+            <br>
+            
+            Mitte 2019 wechselte Brown zum Auslandgeheimdienst der USA, wo er als Chef-Ermittler gegen terroristische Bedrohungen aus dem Ausland tätig war.
+
+            <br>
+            <br>
+            <br>
+            
+            Im Jahr 2023 wurde Brown von der Bundesregierung in den Bundesstaat San Andreas versetzt, wo er als Commissioner die Arbeit des LSPD und FIB bewerten sollte. Nach Abschluss der Ermittlungen im Jahr 2024 entschloss sich die Regierung dazu die Leitung der Bundesbehörde zu entlassen und Brown als neuen Director des FIB einzustellen.
+
+            <br>
+            <br>
+            <br>
+            
+        </p>
+    </article>
+    <!-- Add more team members here -->
+</section>
+</main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+       
+            
+
+    <main>
+        <section class="team-container">
+            <article class="team-member">
+                <a target="_blank" href="https://cdn.discordapp.com/attachments/1051558728345862265/1282383957383581726/image.png?ex=66df28a0&is=66ddd720&hm=515283af86037772602a23683cbb75d934d225d61692243e01325a6c792dd6eb&"> 
+                    <img src="https://cdn.discordapp.com/attachments/1051558728345862265/1282383957383581726/image.png?ex=66df28a0&is=66ddd720&hm=515283af86037772602a23683cbb75d934d225d61692243e01325a6c792dd6eb&" alt="Max Snusgott">
+                    </a>
+                <h2>Max Snusgott</h2>
+                <p><b>Assistant Director</b></p>
+                <br>
+            
+                <p class="teaxt">
+                 
+                    Biographie folgt...
+
+                </p>
+            </article>
+
+
+
+    
+                
+
+
+          
+            <!-- Add more team members here -->
+     
+
+            <article class="team-member">
+                <img src="https://st4.depositphotos.com/9998432/22597/v/450/depositphotos_225976914-stock-illustration-person-gray-photo-placeholder-man.jpg" alt="Max Mustmermann">
+                <h2>Drake Baker</h2>
+                <p><b>Assistant Director</b></p>
+                <br>
+                <p class="teaxt">Biographie folgt...</p>
+            </article>
+            <!-- Add more team members here -->
+        </section>
+    </main>
+
+<script src="script2.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <header>
+            <h1>Leitung der Ausbildungsabteilung</h1>
+        </header>
+    
+        <br>
+        <br>
+    
+    <main>
+        <section class="team-container">
+            <article class="team-member">
+                <a target="_blank" href="https://cdn.discordapp.com/attachments/1051558728345862265/1282386371117449360/image.png?ex=66df2ae0&is=66ddd960&hm=178e39fde037ac2829cbbdc92e3b6be37c51291cb47fb7f5aba312de2cff22b5&"> 
+                <img src="https://cdn.discordapp.com/attachments/1051558728345862265/1282386371117449360/image.png?ex=66df2ae0&is=66ddd960&hm=178e39fde037ac2829cbbdc92e3b6be37c51291cb47fb7f5aba312de2cff22b5&" alt="K. C. Brown">
+            </a>
+                <h2>Prof. Dr. Nexos C. Dean</h2>
+                <p><b>Section Chief</b></p>
+                <br>
+                <p class="teaxt">
+                    Anfang 2023 zog Prof. Dr. Nexos Chuchillo Dean nach Los Santos, um seine berufliche und akademische Laufbahn voranzutreiben.
+Er trat dem Los Santos Medical Department bei, wo er sich schnell durch die Ränge arbeitete und bis zum Facharzt für Notfallmedizin aufstieg.
+Während seiner Zeit im LSMD widmete er sich auch intensiv seiner akademischen Ausbildung. Er erlangte dort seinen Doktortitel und wurde schließlich zum Professor ernannt.
+
+<br>
+<br>
+
+Mitte 2023 entschied sich Prof. Dr. Dean, eine einjährige Pause einzulegen und Los Santos auf unbestimmte Zeit zu verlassen. Diese selbstgewählte Auszeit nutzte er, um sich neu zu orientieren und über seine zukünftigen Ziele nachzudenken.
+
+<br>
+<br>
+
+
+Im Jahr 2024 kehrte Prof. Dr. Dean nach Los Santos zurück und begann eine neue Karriere beim Secret Service. Dank seiner analytischen Fähigkeiten und seiner Erfahrung im Krisenmanagement stieg er schnell in die Führungsränge auf und erreichte den Rang des "Assistant Director". Trotz seines Erfolgs beim Secret Service spürte er bald, dass er eine neue Herausforderung suchte, und entschloss sich, die Organisation zu verlassen.
+
+<br>
+<br>
+
+
+Ende Juli 2024 trat Prof. Dr. Nexos Chuchillo Dean dem Federal Investigation Bureau bei. Aufgrund seiner umfassenden Erfahrungen und seines starken Engagements stieg er rasch zum "Supervisory Special Agent" auf. In dieser Position übernahm er die Leitung des "Department of Recruitment and Training".
+
+<br>
+<br>
+
+
+Neben seiner Tätigkeit im FIB engagierte sich Prof. Dr. Dean zunehmend auch politisch. Seine Führungsqualitäten und sein tiefes Verständnis für die Belange der Stadt machten ihn zu einem idealen Kandidaten für den Stadtrat von Los Santos. Mitte 2024 wurde er zum Vorsitzenden des Stadtrats gewählt, eine Position, in der er nun maßgeblich an der Gestaltung der Zukunft der Stadt beteiligt ist.
+                </p>
+            </article>
+            <article class="team-member">
+                <img src="https://st4.depositphotos.com/9998432/22597/v/450/depositphotos_225976914-stock-illustration-person-gray-photo-placeholder-man.jpg" alt="Max Mustmermann">
+                <h2>Nicht vorhanden</h2>
+                <p><b>Deputy Section Chief</b></p>
+                <br>
+                <p class="teaxt">
+                 
+                    Biographie folgt...
+
+                </p>
+            </article>
+            <!-- Add more team members here -->
+        </section>
+    </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+  
+    
+
+
+
+
+        
+  
+
+
+
+
+        
+
+    <br>
+    <br>
+
+    
+    
+    
+     
+ 
+
+
+    
+
+
+
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Über uns</h3>
+            <p>Das Federal Investigation Bureau (kurz: FIB) ist die zentrale Sicherheitsbehörde der Vereinigten Staaten. Das FIB ist daher für die Verfolgung und Verhinderung von bundesrechtlichen Straftaten zuständig. Die Behörde fungiert außerdem als Strafverfolgungsbehörde und Inlandsgeheimdienst.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Anschrift & Kontakt</h3>
+            <ul>
+                <li>Addresse: PLZ 9393, Los Santos, USA</li>
+                <li>Addresse: PLZ 9393, Los Santos, USA</li>
+                <li>Oder Dispatch absenden</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="karriere.html">Karriere</a></li>
+                <li><a href="aufbau.html">Aufbau</a></li>
+                <li><a href="personalfib.html">Personal</a></li>
+                <li><a href="informantenfib.html">Informant werden</a></li>
+            </ul>
+        </div>
+        <div class="footer-column social-media">
+            <h3>Folge uns</h3>
+            <a href="https://www.instagram.com/government.of.san.andreas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">Instagram <i class="fa-brands fa-instagram"></i> </a>
+            <a href="#" class="social-icon">Twitter</a>
+          
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Johann IT. Alle Rechte vorbehalten.</p>
+        <br>
+        <p class="wich">Diese Webseite bezieht sich auf den ModernV FiveM Server</p>
+    </div>
+  </footer>
+
+
+
+
+</div>
+</main>
+</div>
+
+
+
+
+<script src="scirpt.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

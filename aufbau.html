@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FIB FiveM ModernV Website">
+    <meta name="keywords" content="FIB ModernV, ModernV, Fivem">
+    <meta name="author" content="Johann IT"  >
+    <title>FIB ModernV Aufbau</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" sizes="16x16" href="favicon2-32x32.png" type="image/png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+</head>
+
+<style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+
+
+  
+ 
+
+  
+	
+		
+}
+
+
+
+.colorback{
+    background: #000000;
+
+
+ 
+}
+
+.fot{
+    text-align: center;
+    height: 1.1rem;
+    width: 2.0rem;
+
+   
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(177, 177, 43);
+    text-align: center;
+
+    padding: 20px 35px;
+ 
+}
+
+.logo {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    
+    
+ 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+ 
+   
+  
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+
+ 
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+
+
+.direk{
+
+background-color: rgb(177, 177, 43) ;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 9px;
+
+
+  text-transform: uppercase;
+}
+
+.einstieg {
+
+    font-weight: 400;
+    text-align: center;  
+    color: rgb(177, 177, 43);
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0.3rem;
+    text-decoration: underline;
+}
+
+
+.einstieg2{
+    font-weight: 400;
+    text-align: center;  
+    color: #000000;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0.3rem;
+ 
+}
+
+.über{
+
+    color: rgb(177, 177, 43);
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 3.2em;
+ 
+}
+
+.texto{
+
+
+
+text-align: center;
+justify-content: center;
+color: rgb(177, 177, 43);
+font-weight: light;
+font-size: 1.1rem;
+text-transform: uppercase;
+line-height: 1.7rem;
+padding: 0.7rem;
+
+
+
+}
+
+
+
+
+
+
+
+
+	
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+    /* width */
+	::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f9f3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(  #8a8a8a , #1d1c1c);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e7d493;
+  cursor: pointer;
+
+}
+
+/* White border */
+.lineb {
+  border-top: 3px solid rgb(177, 177, 43);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+ 
+}
+
+
+
+.contaner {
+ 
+  
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(177, 177, 43);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  cursor: pointer;
+  transition: .5s ease;
+  border-radius: 50%;
+}
+
+.contaner:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.teaxt {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Info-Button Container */
+.info-container {
+   
+
+
+    position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+    
+}
+
+/* Info-Button Stil */
+.info-button {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border: none;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s;
+}
+
+/* Hover-Effekt für den Button */
+.info-button:hover {
+    background-color: red;
+}
+
+/* Versteckter Info-Text */
+.info-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 125%; /* Text über dem Button */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+/* Der Text wird bei Hover sichtbar */
+.info-container:hover .info-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Pfeil unter dem Info-Text */
+.info-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Pfeil unter dem Text */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.savog{
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .info-button {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .info-text {
+        width: 150px;
+        font-size: 14px;
+   
+    }
+}
+
+
+
+footer {
+    background-color: #1a1a1a;
+    color: rgb(177, 177, 43);
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    width: 22%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(177, 177, 43);
+}
+
+.footer-column p, .footer-column ul, .footer-bottom p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: rgb(177, 177, 43);
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #FFF;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(177, 177, 43);
+    text-decoration: none;
+    background-color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #e08900;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+  
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+}
+
+
+</style>
+
+
+<body>
+
+
+
+  <nav class="navbar">
+    <div class="logo"> <img class="fot" src="favicon2-32x32.png"> &nbsp; FIB-Aufbau</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Startseite &nbsp; <i class="fa-sharp fa-solid fa-house-user"></i></a></li>
+        <li><a href="karriere.html">Karriere &nbsp; <i class="fas fa-suitcase"  ></i></a></li>
+        <li><a href="aufbau.html">Aufbau &nbsp; <i class="fa-solid fa-sitemap"></i> </a></li>
+      
+        <li><a href="personalfib.html">Personal &nbsp; <i class="fas fa-person"  ></i></a></li>
+        <li><a href="informantenfib.html">Informanten &nbsp; <i class="fa-solid fa-user-secret"></i></a></li>
+        <li><a href="#">Discord &nbsp; <i class="fab fa-discord" ></i></a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+
+
+
+
+
+    
+
+<div class="colorback">
+
+
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1  class="über">Aufbau  <svg class="savog" xmlns="http://www.w3.org/2000/svg" text-decoration="underline" width="1em" height="1em" viewBox="0 0 24 18">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path stroke-dasharray="2" stroke-dashoffset="2" d="M4 5h0.01">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.1s" values="2;0" />
+            </path>
+            <path stroke-dasharray="14" stroke-dashoffset="14" d="M8 5h12">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.1s" dur="0.2s" values="14;0" />
+            </path>
+            <path stroke-dasharray="2" stroke-dashoffset="2" d="M4 10h0.01">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.1s" values="2;0" />
+            </path>
+            <path stroke-dasharray="14" stroke-dashoffset="14" d="M8 10h12">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.2s" values="14;0" />
+            </path>
+            <path stroke-dasharray="2" stroke-dashoffset="2" d="M4 15h0.01">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.1s" values="2;0" />
+            </path>
+            <path stroke-dasharray="14" stroke-dashoffset="14" d="M8 15h12">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="14;0" />
+            </path>
+            <path stroke-dasharray="2" stroke-dashoffset="2" d="M4 20h0.01">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.9s" dur="0.1s" values="2;0" />
+            </path>
+            <path stroke-dasharray="14" stroke-dashoffset="14" d="M8 20h12">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="1s" dur="0.2s" values="14;0" />
+            </path>
+        </g>
+    </svg>
+</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+ 
+
+
+
+<br>
+<br>
+<br>
+<br>
+    <div class="direk">
+
+        <br>
+        <br>
+
+        
+            
+
+    <h2 class="einstieg2">Departments</h2>
+    
+    <br>
+    <br>
+
+
+    
+
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+  <br>
+  <br>
+  <br>
+
+  <div  align="center" class="info-container">
+    <button  class="info-button">i</button>
+    <span class="info-text"><b>Wichtig! </b><br>
+        Bewege deine Maus zu den jeweiligen Bilder, um die Leitungen des jeweiligen Departments zu sehen!</span>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr class="lineb">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2 class="einstieg">Drug Observation Agency </h2>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<div class="contaner">
+    <img class="image"   alt="Avatar"   src="https://cdn.discordapp.com/attachments/1280880117215924408/1282145992598229012/DOA_Logo.webp?ex=66de4b01&is=66dcf981&hm=d47d81492fb950d8ed8bfdc74915be26d802f3adbfe5b0d0bba1490e9dd1a7c2&">
+    <div class="overlay">
+        <div   class="teaxt"><b>Leitung:</b>
+            <br>
+            FIB-02
+            <br>
+            <br>
+            <b>Stellv. Leitung:</b> FIB-77
+        </div>
+    </div>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p class="texto">Das D.O.A ist die amerikanische Strafverfolgungsbehörde, deren Hauptziel es ist, die Herstellung sowie den Handel von den jeweiligen Fraktionen zu unterbinden. Ihre Hauptaufgabe ist es, die illegale Herstellung von Drogen sowie den Drogenhandel in Amerika in Los Santos zu unterbinden. Sie verfolgt damit die Umsetzung des Betäubungsmittelgesetzes. Die Einschätzungen des Umlaufes von Drogen, dem Handel sowie der Herstellung der Drogen sind aktuell in den USA in Los Santos sehr hoch eingestuft. Als Maßnahmen werden von dem LSPD und ab und zu das FIB aktive Verkehrskontrollen mit LKWs sowie PKWs durchgeführt. Es werden Razzien auf alle illegalen Routenpunkte geplant und dementsprechend vollstreckt. Das DOA sowie das FIB und das LSPD sind sehr daran interessiert, die Drogenkriminalität aktiv in Los Santos zu bekämpfen.
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ Zweiter Aufgabenbereich wäre es, die Wirtschaftskriminalität zu bekämpfen. Sei es der Schwarzgeld Umlauf, die Schwarzgeldwäsche, der Besitz  von Schwarzgeld, usw.</p>
+
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+ <hr class="lineb">
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+
+<h2 class="einstieg">Department of Recruitment and Training</h2>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="contaner">
+    <img class="image"   alt="Avatar"   src="https://cdn.discordapp.com/attachments/1280880117215924408/1282145992598229012/DOA_Logo.webp?ex=66de4b01&is=66dcf981&hm=d47d81492fb950d8ed8bfdc74915be26d802f3adbfe5b0d0bba1490e9dd1a7c2&">
+    <div class="overlay">
+        <div class="teaxt"><b>Leitung:</b>
+            <br>
+            FIB-24
+            <br>
+            <br>
+          
+        </div>
+    </div>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p class="texto">Das Department of Recruitment and Training (kurz:DRT) ist für die Bewerbungen und den reibungslosen Ablauf der Bewerbungsphase zuständig. Mitglieder dieser sind dazu verpflichtet, die Bewerbungstickets zu überprüfen, zur Abstimmung zu stellen und diese in Form Ablehnungen oder Einladungen abzuarbeiten. Zudem sind die Mitarbeiter des DRT auf sämtliche Ausbildungs Gebiete spezialisiert und daher für die Weiterbildung neuer und beständiger Agenten zuständnig. </p>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr class="lineb">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="einstieg">Gang Investigation Unit</h2>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="contaner">
+<img class="image"   alt="Avatar"   src="https://cdn.discordapp.com/attachments/1280880117215924408/1282146044922036284/giulogo.png?ex=66de4b0e&is=66dcf98e&hm=8a10f95b3438cf1459c76f902231aef8828262d518b4cb63f4113cc3f9ab01a0&">
+<div class="overlay">
+    <div class="teaxt"><b>Leitung:</b>
+        <br>
+        FIB-04 
+        <br>
+        <br>
+        <b>Stellv. Leitung:</b> FIB-19
+    </div>
+</div>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p class="texto"><p class="texto">Die Gang Investigation Unit (GIU) ist eine spezialisierte Abteilung der bundesweiten Strafverfolgungsbehörde Federal Investigation Bureau, die sich primär auf die Bekämpfung von Bandenkriminalität konzentriert. Ihr Hauptaugenmerk liegt dabei auf der Analyse, Überwachung und Zerschlagung von organisierten kriminellen Gruppierungen, die in verschiedenen urbanen Gebieten aktiv sind.
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    Die GIU setzt dabei auf ein umfassendes strategisches Vorgehen. Durch den Einsatz von verdeckten Ermittlern und informantenbasierten Operationen versucht die Einheit, tief in die Strukturen der Banden vorzudringen und diese von innen heraus zu zerschlagen.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr class="lineb">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="einstieg">Tactical Operations Division</h2>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="contaner">
+    <img class="image"   alt="Avatar"   src="https://cdn.discordapp.com/attachments/1280880117215924408/1282145925556342864/todlogo.png?ex=66de4af1&is=66dcf971&hm=01ac541435971e53a75d4b0f6dae5a321537acfdb83928ed7cf1d77fc2ba96f9&">
+    <div class="overlay">
+        <div   class="teaxt"><b>Leitung:</b>
+            <br>
+            FIB-99
+            <br>
+            <br>
+            <b>Stellv. Leitung:</b> FIB-78
+        </div>
+    </div>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p class="texto">Die Tactical Operations Division ist eine Division welche für besondere Ermittlungen zuständig ist. Es werden ein großes Augenmerk auf die Cyber-Crime (Internetkriminalität) gelegt, darunter fallen Gelbe-Seiten & Dark-Chat und weiteres. 
+    Waffenhandel so wie der Verkehr mit Schwarzgeldern ist an der Tagesordnung, diese wurde ebenso zur Aufgabe der Tactical Operations Division  und werden strengstens überwacht.
+
+<br>
+<br>
+<br>
+<br>
+
+    Auch die Überwachung der Ermittlungen jeglicher Behörden fällt in den Arbeitsbereich der Tactical Operations Division  , Fälle von Korruption und weitere strafrechtlich relevante Vorfälle werden untersucht.  </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr class="lineb">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Über uns</h3>
+            <p>Das Federal Investigation Bureau (kurz: FIB) ist die zentrale Sicherheitsbehörde der Vereinigten Staaten. Das FIB ist daher für die Verfolgung und Verhinderung von bundesrechtlichen Straftaten zuständig. Die Behörde fungiert außerdem als Strafverfolgungsbehörde und Inlandsgeheimdienst.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Anschrift & Kontakt</h3>
+            <ul>
+                <li>Addresse: PLZ 9393, Los Santos, USA</li>
+                <li>Addresse: PLZ 9393, Los Santos, USA</li>
+                <li>Oder Dispatch absenden</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="karriere.html">Karriere</a></li>
+                <li><a href="aufbau.html">Aufbau</a></li>
+                <li><a href="personalfib.html">Personal</a></li>
+                <li><a href="informantenfib.html">Informant werden</a></li>
+            </ul>
+        </div>
+        <div class="footer-column social-media">
+            <h3>Folge uns</h3>
+            <a href="https://www.instagram.com/government.of.san.andreas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">Instagram <i class="fa-brands fa-instagram"></i> </a>
+            <a href="#" class="social-icon">Twitter</a>
+          
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Johann IT. Alle Rechte vorbehalten.</p>
+        <br>
+        <p class="wich">Diese Webseite bezieht sich auf den ModernV FiveM Server</p>
+    </div>
+</footer>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script src="scirpt.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
