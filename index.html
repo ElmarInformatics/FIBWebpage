@@ -355,78 +355,6 @@ a{
 
 
 
-/* button */
-.btn {
-
-margin: 10px;
-padding: 15px 40px;
-border: none;
-outline: none;
-color: #ffc5c5;
-cursor: pointer;
-font-size: 20px;
-position: relative;
-z-index: 0;
-border-radius: 12px;
-
-
- 
-
-}
-
-.btn::after {
-content: "";
-z-index: -1;
-position: absolute;
-width: 100%;
-height: 100%;
-background-color: #333;
-left: 0;
-top: 0;
-border-radius: 10px;
-}
-/* glow */
-.btn::before {
-content: "";
-background: linear-gradient(
-  45deg,
-  #FF0000, #FF7300, #FFFB00, #48FF00,
-  #00FFD5, #002BFF, #FF00C8, #FF0000
-);
-position: absolute;
-top: -2px;
-left: -2px;
-background-size: 600%;
-z-index: -1;
-width: calc(100% + 4px);
-height:  calc(100% + 4px);
-filter: blur(8px);
-animation: glowing 20s linear infinite;
-transition: opacity .3s ease-in-out;
-border-radius: 10px;
-opacity: 0;
-}
-
-@keyframes glowing {
-0% {background-position: 0 0;}
-50% {background-position: 400% 0;}
-100% {background-position: 0 0;}
-}
-
-/* hover */
-.btn:hover::before {
-opacity: 1;
-}
-
-.btn:active:after {
-background: transparent;
-}
-
-.btn:active {
-color: #000;
-font-weight: bold;
-}
-
     /* width */
 	::-webkit-scrollbar {
   width: 6px;
@@ -644,6 +572,37 @@ header {
 }
 
 
+
+
+
+/* Styles for the yellow button */
+.yellow-button {
+    background-color: rgb(177, 177, 43); /* Yellow color using RGB */
+    color: #000; /* Black text color */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Hover effect */
+.yellow-button:hover {
+    background-color: rgb(177, 177, 43); /* Slightly lighter yellow on hover */
+    transform: scale(1.25); /* Slight zoom-in effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .yellow-button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+
+
 footer {
     background-color: #1a1a1a;
     color: rgb(177, 177, 43);
@@ -829,6 +788,7 @@ footer {
 <br>
 <br>
 <br>
+<button class="yellow-button"><a href="https://docs.google.com/document/d/1unj5Xs3ZHc7NFQwJjDmlOuLsR3R-EchjBdeIXufHVag/edit?usp=sharing" > Unsere Hausordnung </a></button>
 <br>
 <br>
 <br>
@@ -838,9 +798,7 @@ footer {
 
 </section>
 
-<div align="center">
-    <button  class="btn"> <a href="https://docs.google.com/document/d/1unj5Xs3ZHc7NFQwJjDmlOuLsR3R-EchjBdeIXufHVag/edit?usp=sharing" > Unsere Hausordnung! </a></button>
-    </div>
+
 
 
 <br>
@@ -978,10 +936,9 @@ footer {
 <br>
 <br>
 
-<div align="center"  >
-<button class="btn"><a href="https://discord.com/invite/WsGb3gDd95" > FALL SIE FRAGEN HABEN, KONTAKTIEREN SIE UNS! </a></button>
 
-</div>
+<button class="yellow-button"><a href="https://discord.com/invite/WsGb3gDd95" > FALL SIE FRAGEN HABEN, KONTAKTIEREN SIE UNS! </a></button>
+
 
 <br>
 <br>
