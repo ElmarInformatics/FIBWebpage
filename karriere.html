@@ -257,7 +257,34 @@ text-align: center;
 
 
 
+/* Container to hold the content */
+.containe {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10%;
 
+}
+       
+
+
+
+        /* Responsive Image */
+        .responsive-img {
+            width: 100%;
+            max-width: 100%; /* Ensures image doesn't exceed its original size */
+            height: auto; /* Maintains aspect ratio */
+            border-radius: 7%; /* Adds a slight curve to the corners */
+            cursor: pointer;
+         
+        }
+
+        /* For small screens like mobile */
+        @media (max-width: 768px) {
+            .responsive-img {
+                border-radius: 7%; /* Slightly reduce the corner curve for small screens */
+            }
+        }
 
 
 
@@ -728,6 +755,19 @@ footer {
       <br>
       <br>
       <br>
+      <br>
+      <br>
+      <div class="containe">
+        <!-- Responsive Image -->
+        <img src="personalfib.png" alt="Personal Foto" class="responsive-img">
+  
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 
   
 
