@@ -493,58 +493,6 @@ footer {
 
 
 
-h2 {
-           
-          
-            transition: transform 0.5s ease, color 0.5s ease;
-            position: relative;
-            text-align: center;
-    
-        }
-
-        h2::before, h2::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: white;
-            left: 0;
-         
-            transform: scaleX(0);
-            transition: transform 0.5s ease;
-        }
-
-        h2::before {
-            top: 0;
-        }
-
-        h2::after {
-            bottom: 0;
-        }
-
-        h2:hover {
-            transform: scale(1.1);
-            color: white;
-        }
-
-        h2:hover::before, h2:hover::after {
-            transform: scaleX(0.95);
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            h2 {
-                font-size: 3rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h2 {
-                font-size: 2rem;
-            }
-        }
-
-
 
 
 </style>
