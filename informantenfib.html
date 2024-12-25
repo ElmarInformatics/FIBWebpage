@@ -354,6 +354,21 @@ footer {
 }
 
 
+.snowflake {
+    position: fixed;
+            top: -10px;
+            color:  #ffff64 ;
+            user-select: none;
+            font-size: 2rem;
+            z-index: 1000;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
 </style>
 
 
@@ -380,7 +395,19 @@ footer {
 
 
 
-
+<script>
+    const numFlakes = 110;
+    for (let i = 0; i < numFlakes; i++) {
+        let flake = document.createElement('div');
+        flake.classList.add('snowflake');
+        flake.innerHTML = '❄';
+        flake.style.left = `${Math.random() * 100}vw`;
+        flake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        flake.style.opacity = Math.random();
+        flake.style.fontSize = `${Math.random() * 1.5 + 0.5}em`;
+        document.body.appendChild(flake);
+    }
+  </script>
 
     
 
