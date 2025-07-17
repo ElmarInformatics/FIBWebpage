@@ -6,4 +6,3 @@ document.querySelector('.burger').addEventListener('click', () => {
     burger.classList.toggle('toggle');
 });
 
-alert("Willkommen auf der FIB Website")
