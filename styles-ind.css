@@ -472,7 +472,7 @@ header {
   color: #333;
 }
 
-/* Responsiveness */
+
 @media (max-width: 768px) {
   .header-content h1 {
       font-size: 24px;
@@ -503,13 +503,13 @@ header {
     transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
-/* Hover effect */
+
 .yellow-button:hover {
     background-color: rgb(177, 177, 43); /* Slightly lighter yellow on hover */
     transform: scale(1.25); /* Slight zoom-in effect */
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
     .yellow-button {
         padding: 12px 25px;
