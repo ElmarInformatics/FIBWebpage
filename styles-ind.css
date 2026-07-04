@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
 
 
 
-/* Navbar Styles */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -81,7 +81,7 @@
 
 
 
-/* Responsive Styles */
+
 @media  (max-width: 1024px) {
     .nav-links {
         position: fixed;
@@ -272,12 +272,12 @@ a{
 
 
 
-    /* width */
+    
 	::-webkit-scrollbar {
   width: 6px;
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
   background: #f5f9f3;
 }
@@ -295,7 +295,8 @@ a{
 
 }
 
-/* Yellow border */
+
+
 .lineb {
   border-top: 3px solid rgb(177, 177, 43);
   width: 80%;
@@ -411,7 +412,6 @@ a{
 
 
 
-/* Fixed Image Header */
 header {
   
   background-image: url(fibhq.webp); /* Ersetze durch dein Bild */
@@ -434,7 +434,7 @@ header {
   border-radius: 10px;
 }
 
-/* Scroll Down Button */
+
 .scroll-down-btn {
   position: absolute;
   bottom: 20px;
@@ -446,7 +446,7 @@ header {
   animation: bounce 2s infinite;
 }
 
-/* Bounce animation for Scroll Button */
+
 @keyframes bounce {
   0%, 100% {
       transform: translateY(0);
@@ -456,7 +456,7 @@ header {
   }
 }
 
-/* Section 1 */
+
 #section1 {
   height: 100vh;
   background-color: #000000;
@@ -491,7 +491,7 @@ header {
 
 
 
-/* Styles for the yellow button */
+
 .yellow-button {
     background-color: rgb(177, 177, 43); /* Yellow color using RGB */
     color: #000000; /* Black text color */
